@@ -1,0 +1,58 @@
+{
+  "name": "anchorhub",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@google/generative-ai": "^0.1.1",
+    "@reduxjs/toolkit": "^2.1.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.7",
+    "concurrently": "^8.2.2",
+    "linkedin-jobs-api": "^1.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.12.0",
+    "react-redux": "^9.1.0",
+    "react-router": "^6.22.0",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  },
+  "description": "- create react app - configure tailwind css - Header - Routing of app - login form - sign up form - form validation - useRef hook and I have use the formData state - firebase setup - create user with create user api - sign in by sign by user - create redux store and userSlice - implement sign out by firebase  - update profile method to add the name and profile pic  - Bugfix for new user sign up not showing the name and profile image - Bugfix if the user is not logged in Redirect/browse to login page and vice-versa - unmounting the onAtuhStateChanged by assign it in unsubcribe and then returing it in useEffect - then hardcode the url and svg file to constant.js file - register for the api on tmdb and get the api key - go to he document and get the different api like movie list - create movie slice to store movie list - create a custom hooks and where we fetch the api and get the result and put it into the store for the movies data - create the maincontainer and secondary container - fetch th data for the trailer video - create the state in moviesSlice and add the reducer in it and named it trailerVideo - embeded the youtube video and make it autoplay and mute - use the tailwind class to make mainContainer and secondary Container beautiful - build the secondary container - create and build the MovieList for various trends like popular now playing and upcoming - crete and build the MovieCard - go to tmdb find basic and by images section you will get the image of the movie - create the slices for popular , now playing upcoming movies - remove the youtube video control and add the unmute and mute option in app - create gptSearch page - add gtpSearchBar page and customize the input bar in the header section by the css - Integrete GPT Apis - memoization new concept learn",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
