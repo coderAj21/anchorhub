@@ -17,7 +17,7 @@ app.use(cors({
     methods:["POST","PUT","GET"]
 }));
 
-app.use("",router);
+app.use("/api/v1",router);
 
 const connectDB=require("./config/database");
 connectDB();
