@@ -17,10 +17,14 @@ app.use(cors({
     methods:["POST","PUT","GET"]
 }));
 
-app.use("/api/v1",router);
+app.use("",router);
 
 const connectDB=require("./config/database");
 connectDB();
+
+app.get("/",(req,res)=>{
+    res.send("Server is Working...");
+})
 app.listen(PORT,()=>{
     console.log(`Server is working at Port : ${PORT}`);
 });

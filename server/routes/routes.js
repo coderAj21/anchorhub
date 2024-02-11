@@ -14,6 +14,6 @@ router.post("/login",login);
 router.post("/signup",signUp);
 router.post("/updateProject",updateProject);
 router.post("/updateEducation",updateEducation);
-router.post("updateExperience",updateExperience);
+router.post("/updateExperience",updateExperience);
 
 module.exports=router;
